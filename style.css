@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500&display=swap');
+.main {
+    font-family: 'Raleway', sans-serif;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px;
+}
+.title {
+    padding-bottom: 5px;
+    font-weight: 500;
+    font-size: 30px;
+}
+.subtitle {
+    padding-bottom: 20px;
+    font-size: 15px;
+}
+span {
+    font-size: 24px;
+    color: brown;
+}
+
+input {
+    padding: 10px;
+    border: 1px solid rgba(7, 106, 236, 0.6);
+}
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.comment__text {
+    padding: 15px;
+    word-spacing: 3px;
+    max-width: 800px;
+    max-height: 250px;
+    border: 1px solid rgba(7, 106, 236, 0.6);
+}
+.form__author {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    max-width: 300px;
+}
+.form__comment {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.form__date {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    max-width: 200px;
+}
+.form__submit {
+    margin-bottom: 20px;
+    padding-top: 10px;
+}
+.submit {
+    color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+input[type="submit"] {
+    background-color: rgb(7, 106, 236);
+}
+.submit:hover {
+    background: rgba(7, 106, 236, 0.8);
+    transition: all 0.3s ease;
+}
+.submit:active {
+    margin-top: 5px;
+    transition: all 0.3s ease;
+}
+#asd {
+    border-bottom: 1px solid rgba(194, 210, 231, 0.8);
+}
+.comments__form {
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    gap: 10px;
+    padding: 20px;
+    max-width: 800px;
+    border: 1px solid rgba(194, 210, 231, 0.9);
+    word-spacing: 7px;
+}
+
+
+.btn {
+    background: transparent;
+    border: none;
+    outline: none;
+    position: absolute;
+    color: gray;
+    top: 7%;
+    left: 95%;
+}
+.btn2 {
+    background: transparent;
+    border: none;
+    outline: none;
+    position: absolute;
+    bottom: 7%;
+    left: 95%;
+
+}
+.btn i:hover {
+    cursor: pointer;
+}
