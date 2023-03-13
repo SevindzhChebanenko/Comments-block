@@ -57,9 +57,8 @@ const form = document
           new Date(document.getElementById("localdate").value)
         )} </div>
         <button id="btn" class="btn"><i class="fa-solid fa-heart"></i></button>
-        <button id="btn2" class="btn2"><i class="fa-solid fa-trash"></i></button>
-
     </div>`;
+
     asd.insertAdjacentHTML("afterend", div);
 
     const btn = document.getElementById("btn");
@@ -73,11 +72,14 @@ const form = document
     }
     btn.onclick = toggle;
 
-    const divDelete = document.getElementById("btn2");
-    divDelete.addEventListener("click", () => {
-      const div = document.getElementById("commentsForm");
-      div.remove(div);
-    });
+    const divDeletes = document.querySelectorAll(".comments__form");
+    for (let divDelete of divDeletes) {
+      divDelete.insertAdjacentHTML(
+        "afterbegin",
+        '<button id="btn2" class="btn2"><i class="fa-solid fa-trash"></i></button>'
+      );
+      divDelete.firstChild.onclick = () => divDelete.remove();
+    }
 
     e.target.reset();
   });
